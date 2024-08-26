@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BURGER KING</title>
+    <!-- Boostrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Style Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Aweson -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <style>
+        .starters-section {
+            padding: 20px;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .starter-item {
+            display: inline-block;
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .starter-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .starter-item h3 {
+            margin: 15px 0;
+            font-size: 1.5em;
+        }
+        .starter-item p {
+            margin: 10px 0;
+            font-size: 1em;
+            color: #666;
+        }
+        .starter-item button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .starter-item button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg  py-3 sticky-top" style="background-color: rgb(220, 159, 115);">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img style="width: 120px; height: 90px;" src="https://cdn.dribbble.com/users/3558325/screenshots/6820878/3d-burger-king-logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#heroSlider">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reservation">Feedback and Rating</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Submit a Complaint</a>
+                </li>
+            </ul>
+            <a href="#" class="btn btn-brand">Sign Up/Sign In</a>
+            <a href="#" class="btn btn-brand"> <i class="fa-solid fa-cart-shopping"></i>  View Cart</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Slider -->
+<div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- First Slide -->
+        <div class="carousel-item text-center bg-cover vh-100 active" style="background-image: url('https://images.pexels.com/photos/1600727/pexels-photo-1600727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover; background-position: center;">
+            <div class="container h-100 d-flex align-items-center justify-content-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h6 class="text-white">WELCOME TO BURGER KING</h6>
+                        <h1 class="display-1 my-3 fw-bold text-white">Char-grilled and flavor-filled</h1>
+                        <a href="#" class="btn btn-brand">Explore Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Slide -->
+        <div class="carousel-item text-center bg-cover vh-100" style="background-image: url('https://images.pexels.com/photos/1640770/pexels-photo-1640770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover; background-position: center;">
+            <div class="container h-100 d-flex align-items-center justify-content-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h6 class="text-white">WELCOME TO BURGER KING</h6>
+                        <h1 class="display-1 my-3 fw-bold text-dark">Fresh & Tasty Food</h1>
+                        <a href="#" class="btn btn-brand">Explore Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-5">
+                    <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/abe90c6f781580dcf7622b9497663d510c3398d5-600x338.gif?w=1125&q=90&fit=max&auto=format" alt="">
+                </div>
+                <div class="col-lg-5">
+                    <h1>About us</h1>
+                    <div class="divider my-4"></div>
+                    <p style="text-align: justify;">Burger King is a global fast-food chain renowned for its flame-grilled burgers and commitment to quality. Established in 1954 in Miami, Florida, the brand has grown to become one of the world's largest fast-food franchises, with thousands of locations across the globe.
+                        At Burger King, our mission is to provide high-quality, flame-grilled burgers with a taste that sets us apart. We focus on delivering fast, convenient, and satisfying meals to our customers, ensuring they have a memorable dining experience every time they visit.</p>
+                     <center><a href="#" class="btn btn-brand" style="color: rgb(255, 255, 255); background-color: rgb(255, 0, 0); ">Explore Menu</a></center>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Explore Our Menu</h1>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
+                        type="button" role="tab" aria-controls="pills-all" aria-selected="true">All Items</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-breakfast-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-breakfast" type="button" role="tab" aria-controls="pills-breakfast"
+                        aria-selected="true">Staters</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-lunch-tab" data-bs-toggle="pill" data-bs-target="#pills-lunch"
+                        type="button" role="tab" aria-controls="pills-lunch" aria-selected="true">Main course</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-dinner-tab" data-bs-toggle="pill" data-bs-target="#pills-dinner"
+                        type="button" role="tab" aria-controls="pills-dinner" aria-selected="true">Desert</button>
+                </li>
+
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+
+                <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
+                    tabindex="0">
+                    
+
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fudgy Chewy Brownies">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated (5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">caramel pancake </a></h5>
+                                    <p class="small">Indulge in our decadent Caramel Pancake, featuring fluffy, golden-brown pancakes drenched in a rich, buttery caramel sauce. featuring fluffy, golden-brown </p>
+                                    <button  style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); border-radius: 10px;"  >  ADD TO CART  <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fudgy Chewy Brownies">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated (5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Cheeseburger</a></h5>
+                               
+                                    <p class="small"> Enjoy our Classic Cheeseburger, featuring a perfectly grilled beef patty seasoned with just the right amount of spices.</p>
+                                    <button  style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); border-radius: 10px;"  >  ADD TO CART  <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated (5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Spicy Garlic Noodles</a></h5>
+                                    <p class="small">Savor the flavors of our Spicy Garlic Noodles, a delightful dish featuring tender, perfectly cooked noodles tossed in a savory, spicy garlic sauce</p>
+                                    <button  style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); border-radius: 10px;"  >  ADD TO CART  <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fudgy Chewy Brownies">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated (5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Crispy Fish Fry</a></h5>
+                                    <p class="small">Indulge in our Crispy Fish Fry, featuring tender, flaky fish fillets coated in a perfectly seasoned, golden-brown breading.</p>
+                                    <button  style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); border-radius: 10px;"  >  ADD TO CART  <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fudgy Chewy Brownies">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated (5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Grilled Beef Steak</a></h5>
+                                    <p class="small"> Treat yourself to our Grilled Beef Steak, featuring a succulent, aged beef steak grilled to your desired level of doneness. featuring aged beef steak grilled </p>
+                                    <button  style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); border-radius: 10px;"  >  ADD TO CART  <i class="fa-solid fa-cart-shopping"></i></button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/718742/pexels-photo-718742.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fudgy Chewy Brownies">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated (5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">
+                                
+                                        
+                                        Herb-Roasted Chicken</a></h5>
+                                    <p class="small">Enjoy our Herb-Roasted Chicken, a classic dish featuring juicy, tender chicken pieces marinated with a blend of fresh herbs and spices.</p>
+                                    <button  style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); border-radius: 10px;"  >  ADD TO CART  <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fudgy Chewy Brownies">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated (5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">
+                                     
+                                        
+                                        Classic French Fries</a></h5>
+                                    <p class="small"> Delight in our Classic French Fries, crispy on the outside and tender on the inside. These golden fries are freshly cut and fried to perfection, offering a satisfying </p>
+                                    <button  style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); border-radius: 10px;"  >  ADD TO CART  <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/1603901/pexels-photo-1603901.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fudgy Chewy Brownies">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated (5.4)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Gourmet Chicken Sandwich</a></h5>
+                                    <p class="small"> Savor our Gourmet Chicken Sandwich, featuring a perfectly grilled chicken breast marinated spices.</p>
+                                    <button  style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); border-radius: 10px;"  >  ADD TO CART  <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <section id="menu" class="bg-light">
+        
+
+        
+  <!-- starters -->
+
+                        <section class="starters-section">
+                            <h2>Starters</h2>
+                            
+                            <div class="starter-item">
+                                <img src="https://tse1.mm.bing.net/th?id=OIP.gBleuE4Talyv_xNh-2MyrAHaGu&pid=Api&P=0&h=220" alt="Starter 1">
+                                <h3>Bruschetta</h3>
+                                <p>Freshly toasted bread topped with a vibrant mix of tomatoes, basil, and a drizzle of balsamic glaze.</p>
+                                <button  style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); border-radius: 10px;"  >  ADD TO CART  <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                    
+                            <div class="starter-item">
+                                <img src="https://product-assets.faasos.io/production/product/image_1687423393978_starters.png" alt="Starter 2">
+                                <h3>Mozzarella Sticks</h3>
+                                <p> Crunchy on the outside and gooey on the inside, these mozzarella sticks are served with a side of marinara sauce.</p>
+                                <button  style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); border-radius: 10px;"  >  ADD TO CART  <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                    
+                            <div class="starter-item">
+                                <img src="https://i.pinimg.com/originals/05/86/05/058605002e3151f3e784e0bacadd9413.jpg" alt="Starter 3">
+                                <h3>Stuffed Mushrooms</h3>
+                                <p>Juicy mushrooms filled with a savory blend of cheese, herbs, and breadcrumbs, baked to perfection.</p>
+                                <button  style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); border-radius: 10px;"  >  ADD TO CART  <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                    
+                          
+                    
+                            
+                        </section>
+                        
+                     
+                         <!-- Main course -->
+
+                         <section class="starters-section">
+                            <h2> Main course</h2>
+                            
+                            <div class="starter-item">
+                                <img src="https://tse4.mm.bing.net/th?id=OIP.uw1fmx3RtnvuYgh4pJNrPwHaHa&pid=Api&P=0&h=220" alt="Starter 1">
+                                <h3>Vegetable Stir-Fry</h3>
+                                <p>A colorful medley of fresh vegetables stir-fried in a savory soy-ginger sauce, served over steamed jasmine rice or noodles.</p>
+                                <button  style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); border-radius: 10px;"  >  ADD TO CART  <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                    
+                            <div class="starter-item">
+                                <img src="https://tse1.mm.bing.net/th?id=OIP.bUHtalOCQlVI7av_vAtA9gHaE7&pid=Api&P=0&h=220" alt="Starter 2">
+                                <h3>Spaghetti Carbonara</h3>
+                                <p>Classic Italian pasta dish with spaghetti tossed in a silky sauce made from eggs, Parmesan cheese, pancetta, and freshly cracked black pepper.</p>
+                                <button  style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); border-radius: 10px;"  >  ADD TO CART  <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                    
+                            <div class="starter-item">
+                                <img src="https://tse4.mm.bing.net/th?id=OIP.ANxJfmMIWBeaEVUQh8xI0AHaEO&pid=Api&P=0&h=220" alt="Starter 3">
+                                <h3>Beef Stroganoff</h3>
+                                <p>Tender strips of beef sautéed with mushrooms and onions in a rich, creamy sauce, served over egg noodles or rice.</p>
+                                <button  style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); border-radius: 10px;"  >  ADD TO CART  <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                    
+                          
+                    
+                            
+                        </section>
+
+
+
+                        <!-- Desert -->
+
+                        <section class="starters-section">
+                            <h2>Starters</h2>
+                            
+                            <div class="starter-item">
+                                <img src="https://tse1.mm.bing.net/th?id=OIP.7UmR6jAHmEjZMgIIWLEONAHaHa&pid=Api&P=0&h=220" alt="Starter 1">
+                                <h3>Chocolate Lava Cake</h3>
+                                <p>A decadent chocolate cake with a gooey, molten chocolate center, served warm with a scoop of vanilla</p>
+                                <button  style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); border-radius: 10px;"  >  ADD TO CART  <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                    
+                            <div class="starter-item">
+                                <img src="https://tse2.mm.bing.net/th?id=OIP.21XG1xTLOPD5KUE5jbEtUQHaGU&pid=Api&P=0&h=220" alt="Starter 2">
+                                <h3> Apple Pie</h3>
+                                <p> A timeless dessert with a flaky crust and a warm, spiced apple filling, served with a dollop of whipped cream or a scoop of ice cream.  </p>
+                                <button  style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); border-radius: 10px;"  >  ADD TO CART  <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                    
+                            <div class="starter-item">
+                                <img src="https://tse3.mm.bing.net/th?id=OIP.QWhdll1kwA3bj3jEWNX20gHaGy&pid=Api&P=0&h=220" alt="Starter 3">
+                                <h3>Crème Brûlée</h3>
+                                <p>A rich custard topped with a layer of caramelized sugar, offering a perfect contrast of creamy and crunchy textures.
+                                    </p>
+                                <button  style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); border-radius: 10px;"  >  ADD TO CART  <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                    
+                          
+                    
+                            
+                        </section>
+                        
+                   
+   
+    <!-- Features -->
+    <section id="features" class="bg-cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 class="text-white">Why to choose us?</h1>
+                    <p class="text-white">Burger King is a popular fast-food chain known for its flame-grilled burgers. Their menu features a variety of items including the Whopper, chicken sandwiches, fries, and milkshakes. They also offer breakfast items and a range of sides. Do you have a favorite item from Burger King, or are you thinking about grabbing a meal there?
+
+
+
+
+
+
+                        /p>
+                </div>
+            </div>
+            <div class="row gy-4">
+                
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-timer-2-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Fast Delivery</h4>
+                        <p class="text-white" style="text-align: justify;">Fast delivery is a huge convenience, especially if you’re in a hurry or craving something right away. options for expedited shipping. you might be able to choose a faster delivery option at checkout. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-user-5-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Friendly Staff</h4>
+                        <p class="text-white" style="text-align: justify;" >
+                            Friendly staff can make a big difference in your experience at a business. Whether it's a restaurant, store, or any service, having courteous and helpful employees creates a welcoming atmosphere and makes customers feel valued. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-user-5-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Quality and Quantity</h4>
+                        <p class="text-white" style="text-align: justify;" >
+                            A good balance of both quality and quantity is desired, giving you value for your money. Some places may excel in quality but offer smaller portions or higher prices, while others might provide more quantity but with lower quality.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-shield-star-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Highly Rated</h4>
+                        <p class="text-white" style="text-align: justify;">"Highly rated" typically refers to something that has received excellent reviews or high scores from customers, critics, or users. Whether it's a product, or even an app, being highly rated is a sign of quality and reliability. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div></center>
+    </section>
+
+  
+    <!-- Review -->
+    <section id="reviews" class="bg-cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 class="text-white">Our Client Saying</h1>
+                    <p class="text-white" style="text-align: justify;">Our clients consistently share their positive experiences with us. John Doe highlights the exceptional service and delicious flame-grilled burgers, making us a highly recommended spot for a great meal. Jane Smith appreciates the variety on our menu and the excitement of new items, celebrating us as a top choice for quick dining. Emily Johnson notes the occasional inconsistency in service but acknowledges that when service is good, it perfectly complements our quality food.</p>
+                </div>
+            </div>
+
+            <div id="reviewSlider" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+
+                    <button type="button" data-bs-target="#reviewSlider" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#reviewSlider" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="review bg-white p-5 text-center">
+                                    <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                                    <p class="mb-0">"I've always enjoyed Burger King for its fast food convenience, and their website reflects that well. The menu is easy to navigate, and the burger customization options are fantastic. However, it would be great to see more nutritional information available on the site for those of us who are health-conscious."
+
+                                    </p>
+                                    <div class="person mt-4">
+                                        <img src="https://images.pexels.com/photos/762080/pexels-photo-762080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                                        <h4 class="mb-0 mt-2">Emma L.</h4>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="review bg-white p-5 text-center">
+                                    <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                                    <p class="mb-0">"I love the variety of options on the Burger King website, especially their value meals. The website is intuitive, and adding items to my cart was hassle-free. On the downside, the search function didn’t always bring up the items I was looking for, which can be frustrating."
+
+                                    </p>
+                                    <div class="person mt-4">
+                                        <img src="https://images.pexels.com/photos/39866/entrepreneur-startup-start-up-man-39866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1pg" alt="">
+                                        <h4 class="mb-0 mt-2">Jon Doe</h4>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#reviewSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#reviewSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Reservation -->
+    <section id="reservation">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 style="color: white;">Feedback and Rating</h1>
+                    
+                </div>
+            </div>
+           <!-- Feedback & Rating Section -->
+           <section id="feedback" style="background-color: rgb(220, 159, 115);">
+            <div class="container" style="color: black;" >
+                <h2 class="text-center mb-4"> Feedback and Rating</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="mb-3"></h3>
+                        <form id="feedbackForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="rating" class="form-label">Rating</label>
+                                <select class="form-select" id="rating" required>
+                                    <option value="" disabled selected>Select Rating</option>
+                                    <option value="5">5 Stars</option>
+                                    <option value="4">4 Stars</option>
+                                    <option value="3">3 Stars</option>
+                                    <option value="2">2 Stars</option>
+                                    <option value="1">1 Star</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="comments" class="form-label">Comments</label>
+                                <textarea class="form-control" id="comments" rows="4" required></textarea>
+                            </div>
+                            <center><button type="submit" style="color: white; background-color: red; width: 200px; height: 50px; border-radius: 20px; ">Submit Feedback</button></center>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./burger king.png" alt="Burger King Image" class="img-fluid" style="width: 500px; height: 600px;;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        </div>
+    </section>
+
+
+  
+
+    <!-- Blog Post -->
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 style="color: white;">Submit a Complaint</h1>
+                    
+                </div>
+            </div>
+            
+    <!-- Complaint Form Section -->
+<section id="complaint" style="background-color: rgb(220, 159, 115);">
+    <div class="container">
+        <h2 class="text-center mb-4"> Submit a Complaint</h2>
+        <form id="complaintForm">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="complaintType" class="form-label">Complaint Type</label>
+                    <select class="form-select" id="complaintType" required>
+                        <option value="" disabled selected>Select Complaint Type</option>
+                        <option value="service">Service Issue</option>
+                        <option value="food">Food Quality</option>
+                        <option value="billing">Billing Issue</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="col-12 mb-3">
+                    <label for="comments" class="form-label">Details</label>
+                    <textarea class="form-control" id="comments" rows="4" placeholder="Please describe your complaint in detail" required></textarea>
+                </div>
+                <div class="col-12">
+                   <center> <button type="submit"   style="color: white; background-color: red; width: 200px; height: 50px; border-radius: 20px;">Submit Complaint</button></center>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+            
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-cover">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-4">
+                        <img src="https://tse1.mm.bing.net/th?id=OIP.0k8qGTGTVv40XPgnzqxt0wHaFb&pid=Api&P=0&h=220" class="mb-4" alt="">
+                        <p>Burger King is a global fast-food chain known for its flame-grilled burgers. It was founded in 1954 and is headquartered in Miami, Florida. Burger King offers a variety of fast-food items, including burgers, fries, chicken sandwiches, salads, and breakfast items.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                            <a href="#"><i class="ri-instagram-fill"></i></a>
+                            <a href="#"><i class="ri-youtube-fill"></i></a>
+                            <a href="#"><i class="ri-google-play-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 ms-auto">
+                        <h6 class="text-white mb-4">CONTACT</h6>
+                        <p class="mb-1">+91 9283 4726</p>
+                        <p class="mb-1">Burgerking@mill.com</p>
+                        <p class="mb-0">MAIN BRANCH: <p> kakkanad opp.indian oil <p>Ernakulam,kerala, india</p> </p> </p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h6 class="text-white mb-4">OPENING HOURS</h6>
+                        <p class="mb-1">Monday-Friday : 08:00 - 12:00</p>
+                        <p>Sturday-Sunday : 07:00 - 2:00</p>
+                        <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/da421b826216c29608a2694126a5095f17be8676-630x622.png?w=1125&q=80&fit=max&auto=format" alt="" style="width:300px; height:200px;">
+                        <p>DOWNLOAD THE APP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </footer>
+
+    <!-- Bootstrap Bundle Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
